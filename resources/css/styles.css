@@ -1,0 +1,157 @@
+body {
+    font-size: 16px;
+    font-family: 'Newsreader', serif;
+    background-color: #DB7100;
+    color: #333;
+}
+
+header {
+    background-color: #DB9549;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    padding: 1em;
+    height: 50px;
+    width: 100%;
+    position : fixed;
+    z-index: 100;
+    top: 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+header ul li a {
+    color: #DB4B00;
+}
+
+header ul li a:hover {
+    color: #834503;
+}
+
+.banner {
+    background-image: url('../images/hassan-pasha-7SjEuEF06Zw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: 50px;
+}
+
+.banner h1 {
+    font-size: 4em;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 2em;
+}
+
+.about h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.about p {
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+.pictures-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.pictures-1 img {
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.quote {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quote blockquote {
+    font-size: 3em;
+    text-align: center;
+}
+
+.quote cite {
+    font-size: 1.5em;
+}
+
+.pictures-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items:flex-end;
+    flex-wrap: wrap;
+}
+
+.pictures-2 img {
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.join-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.join-us img {
+    width: 50%;
+}
+
+.join-us h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.join-us p {
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width:480px) {
+    header ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header {
+        height: 100px;
+    }
+    header ul li {
+        margin-bottom: 5px;
+    }
+}
